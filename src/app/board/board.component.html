@@ -1,0 +1,18 @@
+<h1>Current Player {{ player }}</h1>
+<button
+  mat-raised-button
+  [color]="winner ? 'warn' : 'primary'"
+  (click)="newGame()"
+>
+  New game
+</button>
+
+<h2 *ngIf="winner">Player {{ winner }} won the game!</h2>
+
+<main>
+  <app-square
+    *ngFor="let value of squares; let index = index"
+    [value]="value"
+    (click)="makeMove(index)"
+  ></app-square>
+</main>

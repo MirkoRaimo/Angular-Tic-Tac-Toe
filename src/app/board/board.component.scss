@@ -1,0 +1,28 @@
+main {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-gap: 10px;
+
+  margin: 20px;
+}
+
+app-square {
+  border: 1px solid #ccc;
+  height: 200px;
+}
+
+// center all the content of the page
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+:host {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 20px;
+}
